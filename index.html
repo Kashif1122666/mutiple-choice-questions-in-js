@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0 250px;
+        }
+        button{
+            background-color: rgb(6, 7, 7);
+            color: white;
+            border-radius: 15px;
+            width: 100px;
+            height: 60px;
+            margin-left: 20px;
+            margin-top: 20px;
+
+        }
+        button:hover{
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Multiple choice questions</h1>
+
+    <h3>Q1.what is the largest sea in the woorld?</h3>
+    <button onclick="alert('correct'); sum++; ">arabian sea</button>
+    <button onclick="alert('incorrect');  ">Arctic Ocean</button>
+    <button onclick="alert('incorrect');  ">southern ocean</button>
+    <button onclick="alert('incorrect');  ">blackk sea sea</button>
+
+     <br><br><br>
+
+     <h3>Q1.where is Taj mehal?</h3>
+     <button onclick="alert('incorrect');  ">pakistan</button>
+    <button onclick="alert('correct'); sum++; ">IN India</button>
+    <button onclick="alert('incorrect');  ">Iran</button>
+    <button onclick="alert('incorrect');  ">srilanka</button>
+
+    <br><br><br>
+
+    <h3>Q3.Identical twins don't have the same fingerprints.</h3>
+    <button onclick="alert('incorrect');  ">NO</button>
+    <button onclick="alert('incorrect');  ">don't know</button>
+    <button onclick="alert('incorrect');  ">may be</button>
+    <button onclick="alert('correct'); sum++; ">yes</button>
+
+    <br><br><br>
+
+    <Button style="margin-left: 200px; background-color: red; color: wheat;" onclick="alert(sum)">Submit</Button>
+
+    <script>
+        var sum = 0;
+    </script>
+</body>
+</html>
