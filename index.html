@@ -18,40 +18,42 @@
             margin-top: 20px;
 
         }
-        button:hover{
+        /* button:hover{
             background-color: white;
             color: black;
-        }
+        } */
     </style>
 </head>
 <body>
     <h1>Multiple choice questions</h1>
 
-    <h3>Q1.what is the largest sea in the woorld?</h3>
-    <button onclick="alert('correct'); sum++; ">arabian sea</button>
-    <button onclick="alert('incorrect');  ">Arctic Ocean</button>
-    <button onclick="alert('incorrect');  ">southern ocean</button>
-    <button onclick="alert('incorrect');  ">blackk sea sea</button>
+    <h3>Q1.what is the largest sea in the wonmouseover=" this.style.background='white',style.color='black'"oorld?</h3>
+    <button onclick="alert('correct'); sum++; " onmouseleave="this.style.background='black',style.color='white'" onmouseover=" this.style.background='white',style.color='black'">south china sea</button>
+    <button onclick="alert('incorrect');  " onmouseleave="this.style.background='black',style.color='white'" onmouseover=" this.style.background='white',style.color='black'">Arctic Ocean</button>
+    <button onclick="alert('incorrect');  " onmouseleave="this.style.background='black',style.color='white'" onmouseover=" this.style.background='white',style.color='black'">southern ocean</button>
+    <button onclick="alert('incorrect');  " onmouseleave="this.style.background='black',style.color='white'" onmouseover=" this.style.background='white',style.color='black'" >black sea sea</button>
 
      <br><br><br>
 
      <h3>Q1.where is Taj mehal?</h3>
-     <button onclick="alert('incorrect');  ">pakistan</button>
-    <button onclick="alert('correct'); sum++; ">IN India</button>
-    <button onclick="alert('incorrect');  ">Iran</button>
-    <button onclick="alert('incorrect');  ">srilanka</button>
+     <button onclick="alert('incorrect');  "  onmouseleave="this.style.background='black',style.color='white'" onmouseover=" this.style.background='white',style.color='black'">pakistan</button>
+    <button onclick="alert('correct'); sum++; " onmouseleave="this.style.background='black',style.color='white'" onmouseover=" this.style.background='white',style.color='black'">IN India</button>
+    <button onclick="alert('incorrect');  " onmouseleave="this.style.background='black',style.color='white'" onmouseover=" this.style.background='white',style.color='black'">Iran</button>
+    <button onclick="alert('incorrect');  " onmouseleave="this.style.background='black',style.color='white'" onmouseover=" this.style.background='white',style.color='black'">srilanka</button>
 
     <br><br><br>
 
     <h3>Q3.Identical twins don't have the same fingerprints.</h3>
-    <button onclick="alert('incorrect');  ">NO</button>
-    <button onclick="alert('incorrect');  ">don't know</button>
-    <button onclick="alert('incorrect');  ">may be</button>
-    <button onclick="alert('correct'); sum++; ">yes</button>
+    <button onclick="alert('incorrect');  " onmouseleave="this.style.background='black',style.color='white'" onmouseover=" this.style.background='white',style.color='black'">NO</button>
+    <button onclick="alert('incorrect');  " onmouseleave="this.style.background='black',style.color='white'" onmouseover=" this.style.background='white',style.color='black'">don't know</button>
+    <button onclick="alert('incorrect');  "  onmouseleave="this.style.background='black',style.color='white'" onmouseover=" this.style.background='white',style.color='black'">may be</button>
+    <button onclick="alert('correct'); sum++; " onmouseleave="this.style.background='black',style.color='white'" onmouseover=" this.style.background='white',style.color='black'">yes</button>
 
     <br><br><br>
 
-    <Button style="margin-left: 200px; background-color: red; color: wheat;" onclick="alert(sum)">Submit</Button>
+    <Button style="margin-left: 200px; background-color: green; color: wheat; margin-right: 245px;" onclick="alert(`you got ${sum} marks`); sum = 0;" onmouseleave="this.style.background='green',style.color='white'" onmouseover=" this.style.background='white',style.color='black'" >Submit</Button>
+    <Button style="margin-left: 200px; background-color: red; color: wheat;" onclick="sum = 0;" onmouseleave="this.style.background='red',style.color='white'" onmouseover=" this.style.background='white',style.color='black'" >REset</Button>
+    
 
     <script>
         var sum = 0;
